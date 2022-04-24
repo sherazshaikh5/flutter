@@ -1,11 +1,8 @@
-# sampleproject
+# assignment2
 
 A new Flutter project.
 
 ## Getting Started
-
-<img alt="HTML5" width="300px" src="img/Output/screenshot1.jpeg" />
-<img alt="HTML5" width="300px" src="img/Output/screenshot2.jpeg" />
 
 This project is a starting point for a Flutter application.
 
