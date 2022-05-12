@@ -1,4 +1,4 @@
-name: profileApp
+name: ecomappui
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  google_fonts: ^2.3.1
 
 dev_dependencies:
   flutter_test:
@@ -59,7 +60,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/img/android-developer.jpg
+    - assets/image/index.png
+    - assets/image/lenovo.jpg
+    - assets/image/ecom.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -75,12 +78,12 @@ flutter:
   fonts:
     - family: font1
       fonts:
-        - asset: assets/font/BubblegumSans-Regular.ttf
+        - asset: assets/FiraSans-ExtraBoldItalic.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
     - family: font2
       fonts:
-        - asset: assets/font/SignikaNegative-Medium.ttf
+        - asset: assets/FiraSans-Light.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

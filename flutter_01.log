@@ -1,0 +1,77 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+DartDevelopmentServiceException: DartDevelopmentServiceException: JSON-RPC error 100: Feature is disabled.
+
+```
+#0      DartDevelopmentServiceImpl._startDDSServer (package:dds/src/dds_impl.dart:185:7)
+<asynchronous suspension>
+#1      DartDevelopmentServiceImpl.startService (package:dds/src/dds_impl.dart:113:7)
+<asynchronous suspension>
+#2      DartDevelopmentService.startDartDevelopmentService (package:dds/dds.dart:88:5)
+<asynchronous suspension>
+#3      DebugService.startDartDevelopmentService (package:dwds/src/services/debug_service.dart:152:12)
+<asynchronous suspension>
+#4      DevHandler._createAppDebugServices (package:dwds/src/handlers/dev_handler.dart:442:7)
+<asynchronous suspension>
+#5      DevHandler.loadAppServices (package:dwds/src/handlers/dev_handler.dart:229:25)
+<asynchronous suspension>
+#6      Dwds.debugConnection (package:dwds/dwds.dart:91:9)
+<asynchronous suspension>
+#7      WebDevFS.connect.<anonymous closure> (package:flutter_tools/src/isolated/devfs_web.dart:686:15)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.10.2, on Microsoft Windows [Version 10.0.15063], locale en-PK)
+    • Flutter version 2.10.2 at C:\Users\khan computer\Downloads\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 097d3313d8 (8 weeks ago), 2022-02-18 19:33:08 -0600
+    • Engine revision a83ed0e5e3
+    • Dart version 2.16.1
+    • DevTools version 2.9.2
+
+[!] Android toolchain - develop for Android devices (Android SDK version 32.1.0-rc1)
+    • Android SDK at C:\Users\khan computer\AppData\Local\Android\sdk
+    • Platform android-32, build-tools 32.1.0-rc1
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 11.0.11+9-b60-7590822)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop for Windows
+    ✗ Visual Studio not installed; this is necessary for Windows development.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[✓] Android Studio (version 2021.1)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.11+9-b60-7590822)
+
+[✓] VS Code (version 1.66.2)
+    • VS Code at C:\Users\khan computer\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.38.1
+
+[✓] Connected device (2 available)
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.15063]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 100.0.4896.75
+
+[✓] HTTP Host Availability
+    • All required HTTP hosts are available
+
+! Doctor found issues in 2 categories.
+```
